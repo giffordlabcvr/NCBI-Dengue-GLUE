@@ -1,0 +1,8 @@
+
+  # Import GenBank curated sequences (rank-and-file sequences)
+
+  delete source ncbi-curated
+  delete source ncbi-curated-short
+
+  import source /Users/rob/Sources/dengue/ncbi-curated
+  import source /Users/rob/Sources/dengue/ncbi-curated-short
