@@ -1,4 +1,4 @@
-# NCBI-Dengue-GLUE: Phylogenomic Analysis of Dengue Virus
+# NCBI-Dengue-GLUE
 
 ## Overview
 
