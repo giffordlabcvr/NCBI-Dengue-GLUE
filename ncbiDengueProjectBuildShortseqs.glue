@@ -4,11 +4,11 @@ project dengue
   run file glue/dengueImportSources.glue
 
   # Link sequence table entries to isolate table
-  run script glue/dengueLoadIsolateDataCurated.js 
+  run script glue/dengueLoadIsolateDataCuratedShort.js 
 
   # Populate refseq + outgroup metadata from GenBank XML
   create module -f modules/dengueGenbankXmlPopulator.xml
-  module dengueGenbankXmlPopulator populate -w "source.name = 'ncbi-curated'"
+  module dengueGenbankXmlPopulator populate -w "source.name = 'ncbi-curated-short'"
 
   # Load tabular data
   #module dengueSideDataImporterCurated
