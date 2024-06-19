@@ -7,7 +7,6 @@ project dengue
   run script glue/dengueLoadIsolateDataCurated.js 
 
   # Populate refseq + outgroup metadata from GenBank XML
-  create module -f modules/dengueGenbankXmlPopulator.xml
   module dengueGenbankXmlPopulator populate -w "source.name = 'ncbi-curated'"
 
   # Load tabular data
