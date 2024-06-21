@@ -1,0 +1,22 @@
+
+  # Serotype level
+  run file glue/alignmentTree/dengueAlignmentTreeCuratedSerotypes.glue
+
+  # Genotype level
+  run file glue/alignmentTree/dengueAlignmentTreeCuratedGenotypes.glue
+
+  # Major lineage level
+  run file glue/alignmentTree/dengueAlignmentTreeCuratedMajorLineagesDenv1.glue
+  run file glue/alignmentTree/dengueAlignmentTreeCuratedMajorLineagesDenv2.glue
+  run file glue/alignmentTree/dengueAlignmentTreeCuratedMajorLineagesDenv3.glue
+  run file glue/alignmentTree/dengueAlignmentTreeCuratedMajorLineagesDenv4.glue
+
+  # Minor lineage level
+  run file glue/alignmentTree/dengueAlignmentTreeCuratedMinorLineagesDenv1L1.glue
+  run file glue/alignmentTree/dengueAlignmentTreeCuratedMinorLineagesDenv2L1.glue
+  run file glue/alignmentTree/dengueAlignmentTreeCuratedMinorLineagesDenv3L1.glue
+  run file glue/alignmentTree/dengueAlignmentTreeCuratedMinorLineagesDenv4L1.glue
+
+  # Minor sub-lineage level
+  run file glue/alignmentTree/dengueAlignmentTreeCuratedMinorLineagesDenv2L2.glue
+  run file glue/alignmentTree/dengueAlignmentTreeCuratedMinorLineagesDenv4L2.glue
