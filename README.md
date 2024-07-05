@@ -24,8 +24,7 @@ GLUE> run file ncbiDengueProjectBuild.glue
 ```
 ## Downloading NCBI Sequences
 
-Please note that in the interests of maintaining a lightweight repository, NCBI GenBank sequences are not contained within this repository.
-
+To keep the repository lightweight, NCBI GenBank sequences are not included within it. Follow these steps to download the sequences:
 To download sequences >= 5Kb in length run:
 
 ```
