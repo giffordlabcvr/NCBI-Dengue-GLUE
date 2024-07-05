@@ -22,7 +22,7 @@ GNU Affero General Public License v3: http://www.gnu.org/licenses/
 Mode path: /
 GLUE> run file ncbiDengueProjectBuild.glue
 ```
-## Downloading NCBI NucCore Sequences
+## Downloading NCBI Sequences
 
 Please note that in the interests of maintaining a lightweight repository, NCBI GenBank sequences are not contained within this repository.
 
