@@ -39,7 +39,11 @@ Mode path: /
 GLUE> module dengueNcbiImporterGenBankShort import
 ```
 
-Running these files will download the sequences to a source named `ncbi-nuccore` (longer sequences) or `ncbi-nuccore-short` (shorter sequences), which will be exported as a subdirectory in your current working directory. Please move the exported source folder containing the GenBank XML sequences to the location on your hard drive that you prefer to keep them. Then update the 'import sources' files of the corresponding GLUE project build so that they point to this location:
+These commands will download the sequences into sources named ncbi-nuccore (for longer sequences) or ncbi-nuccore-short (for shorter sequences). The sequences will be exported as subdirectories in your current working directory.
+
+Move the exported source folder containing the GenBank XML sequences to your preferred location on your hard drive.
+
+Update the 'import sources' files of the corresponding GLUE project build to point to this new location:
 
 i.e. `import source /path/to/directory/ncbi-nuccore-short`
 
