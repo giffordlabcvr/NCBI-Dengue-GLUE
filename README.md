@@ -22,6 +22,31 @@ GNU Affero General Public License v3: http://www.gnu.org/licenses/
 Mode path: /
 GLUE> run file ncbiDengueProjectBuild.glue
 ```
+## Downloading NCBI NucCore Sequences
+
+Please note that in the interests of maintaining a lightweight repository, NCBI GenBank sequences are not contained within this repository.
+
+To download sequences >= 5Kb in length run:
+
+```
+Mode path: /
+GLUE> module dengueNcbiImporterGenBankLong import
+```
+To download sequences < 5Kb in length run:
+
+```
+Mode path: /
+GLUE> module dengueNcbiImporterGenBankShort import
+```
+
+Running these files will download the sequences to a source named `ncbi-nuccore` (longer sequences) or `ncbi-nuccore-short` (shorter sequences), which will be exported as a subdirectory in your current working directory. Please move the exported source folder containing the GenBank XML sequences to the location on your hard drive that you prefer to keep them. Then update the 'import sources' files of the corresponding GLUE project build so that they point to this location:
+
+i.e. `import source /path/to/directory/ncbi-nuccore-short`
+
+For the longer sequences update [this file](https://github.com/giffordlabcvr/NCBI-Dengue-GLUE/blob/main/glue/dengueImportSources.glue).
+
+For the shorter sequences update [this file](https://github.com/giffordlabcvr/NCBI-Dengue-GLUE/blob/main/glue/dengueImportSourcesShort.glue).
+
 
 ## Usage
 
