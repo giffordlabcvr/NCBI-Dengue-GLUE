@@ -2,70 +2,70 @@
 
   alignment AL_DENV_2II_A
  
-	demote member AL_DENV_2II_A1 --whereClause "sequence.minor_lineage = '2II_A.1' and sequence.source.name like 'ncbi-curated%'"
-	demote member AL_DENV_2II_A2 --whereClause "sequence.minor_lineage = '2II_A.2' and sequence.source.name like 'ncbi-curated%'"
+	demote member AL_DENV_2II_A1 --whereClause "sequence.minor_lineage = '2II_A.1' and sequence.source.name like 'ncbi-nuccore%'"
+	demote member AL_DENV_2II_A2 --whereClause "sequence.minor_lineage = '2II_A.2' and sequence.source.name like 'ncbi-nuccore%'"
  
 	exit
 
 
   alignment AL_DENV_2II_C
 
-	demote member AL_DENV_2II_C1 --whereClause "sequence.minor_lineage = '2II_C.1' and sequence.source.name like 'ncbi-curated%'"
-	demote member AL_DENV_2II_C2 --whereClause "sequence.minor_lineage = '2II_C.2' and sequence.source.name like 'ncbi-curated%'"
+	demote member AL_DENV_2II_C1 --whereClause "sequence.minor_lineage = '2II_C.1' and sequence.source.name like 'ncbi-nuccore%'"
+	demote member AL_DENV_2II_C2 --whereClause "sequence.minor_lineage = '2II_C.2' and sequence.source.name like 'ncbi-nuccore%'"
 
 	exit
 
   alignment AL_DENV_2II_D
  
-	demote member AL_DENV_2II_D1 --whereClause "sequence.minor_lineage = '2II_D.1' and sequence.source.name like 'ncbi-curated%'"
-	demote member AL_DENV_2II_D2 --whereClause "sequence.minor_lineage = '2II_D.2' and sequence.source.name like 'ncbi-curated%'"
- 	demote member AL_DENV_2II_D3 --whereClause "sequence.minor_lineage = '2II_D.3' and sequence.source.name like 'ncbi-curated%'"
+	demote member AL_DENV_2II_D1 --whereClause "sequence.minor_lineage = '2II_D.1' and sequence.source.name like 'ncbi-nuccore%'"
+	demote member AL_DENV_2II_D2 --whereClause "sequence.minor_lineage = '2II_D.2' and sequence.source.name like 'ncbi-nuccore%'"
+ 	demote member AL_DENV_2II_D3 --whereClause "sequence.minor_lineage = '2II_D.3' and sequence.source.name like 'ncbi-nuccore%'"
 
 	exit
 
   alignment AL_DENV_2II_E
 
-	demote member AL_DENV_2II_E1 --whereClause "sequence.minor_lineage = '2II_E.1' and sequence.source.name like 'ncbi-curated%'"
-	demote member AL_DENV_2II_E2 --whereClause "sequence.minor_lineage = '2II_E.2' and sequence.source.name like 'ncbi-curated%'"
+	demote member AL_DENV_2II_E1 --whereClause "sequence.minor_lineage = '2II_E.1' and sequence.source.name like 'ncbi-nuccore%'"
+	demote member AL_DENV_2II_E2 --whereClause "sequence.minor_lineage = '2II_E.2' and sequence.source.name like 'ncbi-nuccore%'"
 
 	exit
 
   alignment AL_DENV_2II_F
 
-	demote member AL_DENV_2II_F1 --whereClause "sequence.minor_lineage = '2II_F.1' and sequence.source.name like 'ncbi-curated%'"
-	demote member AL_DENV_2II_F2 --whereClause "sequence.minor_lineage = '2II_F.2' and sequence.source.name like 'ncbi-curated%'"
+	demote member AL_DENV_2II_F1 --whereClause "sequence.minor_lineage = '2II_F.1' and sequence.source.name like 'ncbi-nuccore%'"
+	demote member AL_DENV_2II_F2 --whereClause "sequence.minor_lineage = '2II_F.2' and sequence.source.name like 'ncbi-nuccore%'"
 
 
 	exit
 
   alignment AL_DENV_2III_A
  
-	demote member AL_DENV_2III_A1 --whereClause "sequence.minor_lineage = '2III_A.1' and sequence.source.name like 'ncbi-curated%'"
-	demote member AL_DENV_2III_A2 --whereClause "sequence.minor_lineage = '2III_A.2' and sequence.source.name like 'ncbi-curated%'"
+	demote member AL_DENV_2III_A1 --whereClause "sequence.minor_lineage = '2III_A.1' and sequence.source.name like 'ncbi-nuccore%'"
+	demote member AL_DENV_2III_A2 --whereClause "sequence.minor_lineage = '2III_A.2' and sequence.source.name like 'ncbi-nuccore%'"
 
 	exit
 
   alignment AL_DENV_2III_C
  
-	demote member AL_DENV_2III_C1 --whereClause "sequence.minor_lineage = '2III_C.1' and sequence.source.name like 'ncbi-curated%'"
-	demote member AL_DENV_2III_C2 --whereClause "sequence.minor_lineage = '2III_C.2' and sequence.source.name like 'ncbi-curated%'"
+	demote member AL_DENV_2III_C1 --whereClause "sequence.minor_lineage = '2III_C.1' and sequence.source.name like 'ncbi-nuccore%'"
+	demote member AL_DENV_2III_C2 --whereClause "sequence.minor_lineage = '2III_C.2' and sequence.source.name like 'ncbi-nuccore%'"
 
 	exit
 
   alignment AL_DENV_2III_D
  
-	demote member AL_DENV_2III_D1 --whereClause "sequence.minor_lineage = '2III_D.1' and sequence.source.name like 'ncbi-curated%'"
-	demote member AL_DENV_2III_D2 --whereClause "sequence.minor_lineage = '2III_D.2' and sequence.source.name like 'ncbi-curated%'"
- 	demote member AL_DENV_2III_D3 --whereClause "sequence.minor_lineage = '2III_D.3' and sequence.source.name like 'ncbi-curated%'"
+	demote member AL_DENV_2III_D1 --whereClause "sequence.minor_lineage = '2III_D.1' and sequence.source.name like 'ncbi-nuccore%'"
+	demote member AL_DENV_2III_D2 --whereClause "sequence.minor_lineage = '2III_D.2' and sequence.source.name like 'ncbi-nuccore%'"
+ 	demote member AL_DENV_2III_D3 --whereClause "sequence.minor_lineage = '2III_D.3' and sequence.source.name like 'ncbi-nuccore%'"
   
 	exit
 
   alignment AL_DENV_2V_A
  
-	demote member AL_DENV_2V_A1 --whereClause "sequence.minor_lineage = '2V_A.1' and sequence.source.name like 'ncbi-curated%'"	
-	demote member AL_DENV_2V_A2 --whereClause "sequence.minor_lineage = '2V_A.2' and sequence.source.name like 'ncbi-curated%'"	
-	demote member AL_DENV_2V_A3 --whereClause "sequence.minor_lineage = '2V_A.3' and sequence.source.name like 'ncbi-curated%'"	
-	demote member AL_DENV_2V_A4 --whereClause "sequence.minor_lineage = '2V_A.4' and sequence.source.name like 'ncbi-curated%'"	
+	demote member AL_DENV_2V_A1 --whereClause "sequence.minor_lineage = '2V_A.1' and sequence.source.name like 'ncbi-nuccore%'"	
+	demote member AL_DENV_2V_A2 --whereClause "sequence.minor_lineage = '2V_A.2' and sequence.source.name like 'ncbi-nuccore%'"	
+	demote member AL_DENV_2V_A3 --whereClause "sequence.minor_lineage = '2V_A.3' and sequence.source.name like 'ncbi-nuccore%'"	
+	demote member AL_DENV_2V_A4 --whereClause "sequence.minor_lineage = '2V_A.4' and sequence.source.name like 'ncbi-nuccore%'"	
 
 	exit
 

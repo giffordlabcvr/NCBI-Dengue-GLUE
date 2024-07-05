@@ -8,8 +8,14 @@ project dengue
 
   # Link sequence table entries to isolate table
   run script glue/dengueLoadIsolateDataCuratedShort.js 
+  
+  # Run script to determine serotypes using BLAST-based recogniser
+  run script glue/dengueRecogniseCuratedSeqsShort.js
 
-  # Load tabular data
+  # Run script to classify within each serotype via GLUE's MCLA algorithm
+  run script glue/dengueGenotypeCuratedSeqsShort.js
+
+  # ...or else load tabular data (i.e. previously determined genotypes)
   #module dengueSideDataImporterCurated
   #  populate -f tabular/denv-ncbi-curated-genotypes-short.tsv
   #  exit

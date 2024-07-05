@@ -9,10 +9,10 @@ project dengue
   # Populate refseq + outgroup metadata from GenBank XML
   module dengueGenbankXmlPopulator populate -w "source.name = 'ncbi-curated'"
   
-  # Do serotype recognition
+  # Run script to determine serotypes using BLAST-based recogniser
   run script glue/dengueRecogniseCuratedSeqs.js
 
-  # Do genotyping
+  # Run script to classify within each serotype via GLUE's MCLA algorithm
   #run script glue/dengueGenotypeCuratedSeqs.js
 
   # ...or else load tabular data (i.e. previously determined genotypes)

@@ -1,17 +1,17 @@
 
-//Do genotype and lineage assignment for all ncbi curated sequences
-var ncbiCurated;
-var whereClause = "source.name = 'ncbi-curated' and genotype = null";
-ncbiCurated = glue.tableToObjects(glue.command(["list", "sequence", "sequenceID", "serotype", "-w", whereClause]));
-//glue.log("INFO", "RESULT WAS ", ncbiCurated);
+//Do genotype and lineage assignment for all ncbi nuccore sequences
+var ncbinuccore;
+var whereClause = "source.name = 'ncbi-nuccore' and genotype = null";
+ncbinuccore = glue.tableToObjects(glue.command(["list", "sequence", "sequenceID", "serotype", "-w", whereClause]));
+//glue.log("INFO", "RESULT WAS ", ncbinuccore);
 
 var processed = 0;
 
-_.each(ncbiCurated, function(ncbiCurated) {
+_.each(ncbinuccore, function(ncbinuccore) {
 
-	var sequenceID = ncbiCurated.sequenceID;
-	var sourceName ='ncbi-curated';
-	var serotype   = ncbiCurated.serotype;	
+	var sequenceID = ncbinuccore.sequenceID;
+	var sourceName ='ncbi-nuccore';
+	var serotype   = ncbinuccore.serotype;	
 	//glue.log("INFO", "ID RESULT WAS ", sequenceID);	
 	//glue.log("INFO", "Serotype RESULT WAS ", serotype);
 

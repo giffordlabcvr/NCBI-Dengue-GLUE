@@ -1,0 +1,4 @@
+
+create module -f modules/dengueNcbiImporterGenBankShort.xml 
+module dengueNcbiImporterGenBankShort import
+export source ncbi-nuccore-short

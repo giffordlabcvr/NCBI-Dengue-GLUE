@@ -1,8 +1,8 @@
 var sequenceMap = {};
 
-var whereClause = "source.name = 'ncbi-curated-short'";
+var whereClause = "source.name = 'ncbi-nuccore-short'";
 
-//Do serotype recognition for all ncbi curated sequences
+//Do serotype recognition for all ncbi nuccore sequences
 var recognitionResults;
 var genotypeResults;
 

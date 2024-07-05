@@ -4,53 +4,53 @@
   
   alignment AL_DENV_1I
 
-	demote member AL_DENV_1I_A --whereClause "sequence.major_lineage = '1I_A' and sequence.source.name like 'ncbi-curated%'"
-	demote member AL_DENV_1I_B --whereClause "sequence.major_lineage = '1I_B' and sequence.source.name like 'ncbi-curated%'"
-	demote member AL_DENV_1I_C --whereClause "sequence.major_lineage = '1I_C' and sequence.source.name like 'ncbi-curated%'"
-	demote member AL_DENV_1I_D --whereClause "sequence.major_lineage = '1I_D' and sequence.source.name like 'ncbi-curated%'"
-	demote member AL_DENV_1I_E --whereClause "sequence.major_lineage = '1I_E' and sequence.source.name like 'ncbi-curated%'"
-	demote member AL_DENV_1I_F --whereClause "sequence.major_lineage = '1I_F' and sequence.source.name like 'ncbi-curated%'"
-	demote member AL_DENV_1I_G --whereClause "sequence.major_lineage = '1I_G' and sequence.source.name like 'ncbi-curated%'"
-	demote member AL_DENV_1I_H --whereClause "sequence.major_lineage = '1I_H' and sequence.source.name like 'ncbi-curated%'"
-	demote member AL_DENV_1I_J --whereClause "sequence.major_lineage = '1I_J' and sequence.source.name like 'ncbi-curated%'"
-	demote member AL_DENV_1I_K --whereClause "sequence.major_lineage = '1I_K' and sequence.source.name like 'ncbi-curated%'"
+	demote member AL_DENV_1I_A --whereClause "sequence.major_lineage = '1I_A' and sequence.source.name like 'ncbi-nuccore%'"
+	demote member AL_DENV_1I_B --whereClause "sequence.major_lineage = '1I_B' and sequence.source.name like 'ncbi-nuccore%'"
+	demote member AL_DENV_1I_C --whereClause "sequence.major_lineage = '1I_C' and sequence.source.name like 'ncbi-nuccore%'"
+	demote member AL_DENV_1I_D --whereClause "sequence.major_lineage = '1I_D' and sequence.source.name like 'ncbi-nuccore%'"
+	demote member AL_DENV_1I_E --whereClause "sequence.major_lineage = '1I_E' and sequence.source.name like 'ncbi-nuccore%'"
+	demote member AL_DENV_1I_F --whereClause "sequence.major_lineage = '1I_F' and sequence.source.name like 'ncbi-nuccore%'"
+	demote member AL_DENV_1I_G --whereClause "sequence.major_lineage = '1I_G' and sequence.source.name like 'ncbi-nuccore%'"
+	demote member AL_DENV_1I_H --whereClause "sequence.major_lineage = '1I_H' and sequence.source.name like 'ncbi-nuccore%'"
+	demote member AL_DENV_1I_J --whereClause "sequence.major_lineage = '1I_J' and sequence.source.name like 'ncbi-nuccore%'"
+	demote member AL_DENV_1I_K --whereClause "sequence.major_lineage = '1I_K' and sequence.source.name like 'ncbi-nuccore%'"
 
 	exit
 
 
   alignment AL_DENV_1III
 
-	demote member AL_DENV_1III_A --whereClause "sequence.major_lineage = '1III_A' and sequence.source.name like 'ncbi-curated%'"
-	demote member AL_DENV_1III_B --whereClause "sequence.major_lineage = '1III_B' and sequence.source.name like 'ncbi-curated%'"
+	demote member AL_DENV_1III_A --whereClause "sequence.major_lineage = '1III_A' and sequence.source.name like 'ncbi-nuccore%'"
+	demote member AL_DENV_1III_B --whereClause "sequence.major_lineage = '1III_B' and sequence.source.name like 'ncbi-nuccore%'"
 
 	exit
 
 
   alignment AL_DENV_1IV
 
-	demote member AL_DENV_1IV_A --whereClause "sequence.major_lineage = '1IV_A' and sequence.source.name like 'ncbi-curated%'"
-	demote member AL_DENV_1IV_B --whereClause "sequence.major_lineage = '1IV_B' and sequence.source.name like 'ncbi-curated%'"
-	demote member AL_DENV_1IV_C --whereClause "sequence.major_lineage = '1IV_C' and sequence.source.name like 'ncbi-curated%'"
+	demote member AL_DENV_1IV_A --whereClause "sequence.major_lineage = '1IV_A' and sequence.source.name like 'ncbi-nuccore%'"
+	demote member AL_DENV_1IV_B --whereClause "sequence.major_lineage = '1IV_B' and sequence.source.name like 'ncbi-nuccore%'"
+	demote member AL_DENV_1IV_C --whereClause "sequence.major_lineage = '1IV_C' and sequence.source.name like 'ncbi-nuccore%'"
 
 	exit
 
   alignment AL_DENV_1V
 
-	demote member AL_DENV_1V_A --whereClause "sequence.major_lineage = '1V_A' and sequence.source.name like 'ncbi-curated%'"
-	demote member AL_DENV_1V_B --whereClause "sequence.major_lineage = '1V_B' and sequence.source.name like 'ncbi-curated%'"
-	demote member AL_DENV_1V_C --whereClause "sequence.major_lineage = '1V_C' and sequence.source.name like 'ncbi-curated%'"
-	demote member AL_DENV_1V_D --whereClause "sequence.major_lineage = '1V_D' and sequence.source.name like 'ncbi-curated%'"
-	demote member AL_DENV_1V_E --whereClause "sequence.major_lineage = '1V_E' and sequence.source.name like 'ncbi-curated%'"
-	demote member AL_DENV_1V_F --whereClause "sequence.major_lineage = '1V_F' and sequence.source.name like 'ncbi-curated%'"
-	demote member AL_DENV_1V_G --whereClause "sequence.major_lineage = '1V_G' and sequence.source.name like 'ncbi-curated%'"
+	demote member AL_DENV_1V_A --whereClause "sequence.major_lineage = '1V_A' and sequence.source.name like 'ncbi-nuccore%'"
+	demote member AL_DENV_1V_B --whereClause "sequence.major_lineage = '1V_B' and sequence.source.name like 'ncbi-nuccore%'"
+	demote member AL_DENV_1V_C --whereClause "sequence.major_lineage = '1V_C' and sequence.source.name like 'ncbi-nuccore%'"
+	demote member AL_DENV_1V_D --whereClause "sequence.major_lineage = '1V_D' and sequence.source.name like 'ncbi-nuccore%'"
+	demote member AL_DENV_1V_E --whereClause "sequence.major_lineage = '1V_E' and sequence.source.name like 'ncbi-nuccore%'"
+	demote member AL_DENV_1V_F --whereClause "sequence.major_lineage = '1V_F' and sequence.source.name like 'ncbi-nuccore%'"
+	demote member AL_DENV_1V_G --whereClause "sequence.major_lineage = '1V_G' and sequence.source.name like 'ncbi-nuccore%'"
 
 	exit
 	
 
   alignment AL_DENV_1VI
 
-	demote member AL_DENV_1VI_A --whereClause "sequence.major_lineage = '1VI_A' and sequence.source.name like 'ncbi-curated%'"
-	demote member AL_DENV_1VI_B --whereClause "sequence.major_lineage = '1VI_B' and sequence.source.name like 'ncbi-curated%'"
+	demote member AL_DENV_1VI_A --whereClause "sequence.major_lineage = '1VI_A' and sequence.source.name like 'ncbi-nuccore%'"
+	demote member AL_DENV_1VI_B --whereClause "sequence.major_lineage = '1VI_B' and sequence.source.name like 'ncbi-nuccore%'"
 
 	exit
 
