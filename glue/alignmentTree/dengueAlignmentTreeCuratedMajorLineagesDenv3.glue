@@ -4,24 +4,24 @@
 
   alignment AL_DENV_3I
 
-	demote member AL_DENV_3I_A --whereClause "sequence.major_lineage = '3I_A' and sequence.source.name = 'ncbi-curated'"
-	demote member AL_DENV_3I_B --whereClause "sequence.major_lineage = '3I_B' and sequence.source.name = 'ncbi-curated'"
-	demote member AL_DENV_3I_C --whereClause "sequence.major_lineage = '3I_C' and sequence.source.name = 'ncbi-curated'"
+	demote member AL_DENV_3I_A --whereClause "sequence.major_lineage = '3I_A' and sequence.source.name like 'ncbi-curated%'"
+	demote member AL_DENV_3I_B --whereClause "sequence.major_lineage = '3I_B' and sequence.source.name like 'ncbi-curated%'"
+	demote member AL_DENV_3I_C --whereClause "sequence.major_lineage = '3I_C' and sequence.source.name like 'ncbi-curated%'"
  
 	exit
 
   alignment AL_DENV_3II
   
-	demote member AL_DENV_3II_A --whereClause "sequence.major_lineage = '3II_A' and sequence.source.name = 'ncbi-curated'"
-	demote member AL_DENV_3II_B --whereClause "sequence.major_lineage = '3II_B' and sequence.source.name = 'ncbi-curated'"
+	demote member AL_DENV_3II_A --whereClause "sequence.major_lineage = '3II_A' and sequence.source.name like 'ncbi-curated%'"
+	demote member AL_DENV_3II_B --whereClause "sequence.major_lineage = '3II_B' and sequence.source.name like 'ncbi-curated%'"
   
 	exit
 
   alignment AL_DENV_3III
 
-	demote member AL_DENV_3III_A --whereClause "sequence.major_lineage = '3III_A' and sequence.source.name = 'ncbi-curated'"
- 	demote member AL_DENV_3III_B --whereClause "sequence.major_lineage = '3III_B' and sequence.source.name = 'ncbi-curated'"
-	demote member AL_DENV_3III_C --whereClause "sequence.major_lineage = '3III_C' and sequence.source.name = 'ncbi-curated'"
+	demote member AL_DENV_3III_A --whereClause "sequence.major_lineage = '3III_A' and sequence.source.name like 'ncbi-curated%'"
+ 	demote member AL_DENV_3III_B --whereClause "sequence.major_lineage = '3III_B' and sequence.source.name like 'ncbi-curated%'"
+	demote member AL_DENV_3III_C --whereClause "sequence.major_lineage = '3III_C' and sequence.source.name like 'ncbi-curated%'"
 
 	exit
 

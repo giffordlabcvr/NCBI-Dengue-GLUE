@@ -2,41 +2,41 @@
 
   alignment AL_DENV_1
   
-	demote member AL_DENV_1I --whereClause "sequence.genotype = '1I' and sequence.source.name = 'ncbi-curated'"
-	demote member AL_DENV_1III --whereClause "sequence.genotype = '1III' and sequence.source.name = 'ncbi-curated'"
-	demote member AL_DENV_1IV --whereClause "sequence.genotype = '1IV' and sequence.source.name = 'ncbi-curated'"
-	demote member AL_DENV_1V --whereClause "sequence.genotype = '1V' and sequence.source.name = 'ncbi-curated'"
-	demote member AL_DENV_1VI --whereClause "sequence.genotype = '1VI' and sequence.source.name = 'ncbi-curated'"
+	demote member AL_DENV_1I --whereClause "sequence.genotype = '1I' and sequence.source.name like 'ncbi-curated%'"
+	demote member AL_DENV_1III --whereClause "sequence.genotype = '1III' and sequence.source.name like 'ncbi-curated%'"
+	demote member AL_DENV_1IV --whereClause "sequence.genotype = '1IV' and sequence.source.name like 'ncbi-curated%'"
+	demote member AL_DENV_1V --whereClause "sequence.genotype = '1V' and sequence.source.name like 'ncbi-curated%'"
+	demote member AL_DENV_1VI --whereClause "sequence.genotype = '1VI' and sequence.source.name like 'ncbi-curated%'"
 	
 	exit
 
 
   alignment AL_DENV_2
   
-	demote member AL_DENV_2I --whereClause "sequence.genotype = '2I' and sequence.source.name = 'ncbi-curated'"
-	demote member AL_DENV_2II --whereClause "sequence.genotype = '2II' and sequence.source.name = 'ncbi-curated'"
-	demote member AL_DENV_2III --whereClause "sequence.genotype = '2III' and sequence.source.name = 'ncbi-curated'"
-	demote member AL_DENV_2IV --whereClause "sequence.genotype = '2IV' and sequence.source.name = 'ncbi-curated'"
-	demote member AL_DENV_2V --whereClause "sequence.genotype = '2V' and sequence.source.name = 'ncbi-curated'"
-	demote member AL_DENV_2VI --whereClause "sequence.genotype = '2VI' and sequence.source.name = 'ncbi-curated'"
+	demote member AL_DENV_2I --whereClause "sequence.genotype = '2I' and sequence.source.name like 'ncbi-curated%'"
+	demote member AL_DENV_2II --whereClause "sequence.genotype = '2II' and sequence.source.name like 'ncbi-curated%'"
+	demote member AL_DENV_2III --whereClause "sequence.genotype = '2III' and sequence.source.name like 'ncbi-curated%'"
+	demote member AL_DENV_2IV --whereClause "sequence.genotype = '2IV' and sequence.source.name like 'ncbi-curated%'"
+	demote member AL_DENV_2V --whereClause "sequence.genotype = '2V' and sequence.source.name like 'ncbi-curated%'"
+	demote member AL_DENV_2VI --whereClause "sequence.genotype = '2VI' and sequence.source.name like 'ncbi-curated%'"
 	
 	exit
 
 
   alignment AL_DENV_3
 
-	demote member AL_DENV_3I --whereClause "sequence.genotype = '3I' and sequence.source.name = 'ncbi-curated'"
-	demote member AL_DENV_3II --whereClause "sequence.genotype = '3II' and sequence.source.name = 'ncbi-curated'"
-	demote member AL_DENV_3III --whereClause "sequence.genotype = '3III' and sequence.source.name = 'ncbi-curated'"
+	demote member AL_DENV_3I --whereClause "sequence.genotype = '3I' and sequence.source.name like 'ncbi-curated%'"
+	demote member AL_DENV_3II --whereClause "sequence.genotype = '3II' and sequence.source.name like 'ncbi-curated%'"
+	demote member AL_DENV_3III --whereClause "sequence.genotype = '3III' and sequence.source.name like 'ncbi-curated%'"
 	
 	exit
 
 
   alignment AL_DENV_4
 
- 	demote member AL_DENV_4I --whereClause "sequence.genotype = '4I' and sequence.source.name = 'ncbi-curated'"
-	demote member AL_DENV_4II --whereClause "sequence.genotype = '4II' and sequence.source.name = 'ncbi-curated'"
-	demote member AL_DENV_4III --whereClause "sequence.genotype = '4III' and sequence.source.name = 'ncbi-curated'"
+ 	demote member AL_DENV_4I --whereClause "sequence.genotype = '4I' and sequence.source.name like 'ncbi-curated%'"
+	demote member AL_DENV_4II --whereClause "sequence.genotype = '4II' and sequence.source.name like 'ncbi-curated%'"
+	demote member AL_DENV_4III --whereClause "sequence.genotype = '4III' and sequence.source.name like 'ncbi-curated%'"
 	
 	exit
 

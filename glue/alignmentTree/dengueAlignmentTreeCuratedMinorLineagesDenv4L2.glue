@@ -2,7 +2,7 @@
 
   alignment AL_DENV_4I_A1
   
-	demote member AL_DENV_4I_A1.1 --whereClause "sequence.minor_sublineage = '4I_A.1.1' and sequence.source.name = 'ncbi-curated'"	
-	demote member AL_DENV_4I_A1.2 --whereClause "sequence.minor_sublineage = '4I_A.1.2' and sequence.source.name = 'ncbi-curated'"	
+	demote member AL_DENV_4I_A1.1 --whereClause "sequence.minor_sublineage = '4I_A.1.1' and sequence.source.name like 'ncbi-curated%'"	
+	demote member AL_DENV_4I_A1.2 --whereClause "sequence.minor_sublineage = '4I_A.1.2' and sequence.source.name like 'ncbi-curated%'"	
 
 	exit

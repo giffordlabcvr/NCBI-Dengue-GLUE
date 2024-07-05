@@ -146,7 +146,7 @@ for(var i = 0; i < serotypes.length; i++) {
 
 			//glue.log("INFO", "Creating replacement object", replacementObj);
 
-			var variationName = "denv"+serotype+"_aa_rpl:"+replacementObj.id;
+			var variationName = "denv_aa_rpl:"+replacementObj.id;
 			var variationExists = false;
 	
 			glue.inMode("reference/"+comparisonRefName+"/feature-location/"+replacementObj.feature, function() {

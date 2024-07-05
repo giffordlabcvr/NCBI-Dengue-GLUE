@@ -13,24 +13,18 @@ project dengue
   run script glue/dengueRecogniseCuratedSeqs.js
 
   # Do genotyping
-  run script glue/dengueGenotypeCuratedSeqs.js
+  #run script glue/dengueGenotypeCuratedSeqs.js
 
-  # Load tabular data
-  #module dengueSideDataImporterCurated
-  #  populate -f tabular/denv-ncbi-curated-genotypes.tsv
-  #  exit
+  # ...or else load tabular data (i.e. previously determined genotypes)
+  module dengueSideDataImporterCurated
+    populate -f tabular/denv-ncbi-curated-genotypes.tsv
+    exit
 
   # Add curated sequences to alignment tree
   run file glue/dengueAlignmentTreeCurated.glue
 
   # Compute alignments for curated sequecnes
   run file glue/dengueComputeMsasCurated.glue
-
-  # Run script to calculate aa replacements
-  run script glue/dengueGenerateReplacements.js
-
-  # Count the number of sequences in which variants occur
-  run script glue/dengueSetVariantNumSeqs.js
 
   # Validate
   validate
