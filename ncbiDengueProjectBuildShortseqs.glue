@@ -3,11 +3,11 @@ project dengue
   # Import GenBank curated sequences (rank-and-file sequences)
   run file glue/dengueImportSourcesShort.glue
 
-  # Populate refseq + outgroup metadata from GenBank XML
-  module dengueGenbankXmlPopulator populate -w "source.name = 'ncbi-curated-short'"
-
   # Link sequence table entries to isolate table
   run script glue/dengueLoadIsolateDataCuratedShort.js 
+
+  # Populate refseq + outgroup metadata from GenBank XML
+  module dengueGenbankXmlPopulator populate -w "source.name = 'ncbi-curated-short'"
   
   # Run script to determine serotypes using BLAST-based recogniser
   run script glue/dengueRecogniseCuratedSeqsShort.js
@@ -30,5 +30,4 @@ project dengue
   validate
 
   exit
-
 

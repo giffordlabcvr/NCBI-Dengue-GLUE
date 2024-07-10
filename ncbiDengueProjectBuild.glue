@@ -4,31 +4,29 @@ project dengue
   run file glue/dengueImportSources.glue
 
   # Link sequence table entries to isolate table
-  run script glue/dengueLoadIsolateDataCurated.js 
+  run script glue/dengueLoadIsolateDataNuccore.js 
 
   # Populate refseq + outgroup metadata from GenBank XML
-  module dengueGenbankXmlPopulator populate -w "source.name = 'ncbi-curated'"
+  module dengueGenbankXmlPopulator populate -w "source.name = 'ncbi-nuccore'"
+
+  # Load classification data from tabular (i.e. from previous genotyping)
+  module dengueSideDataImporterGenotypes
+    populate -f tabular/denv-ncbi-nuccore-genotypes.tsv
+    exit
   
   # Run script to determine serotypes using BLAST-based recogniser
-  run script glue/dengueRecogniseCuratedSeqs.js
+  #run script glue/dengueRecogniseNuccoreSeqs.js
 
   # Run script to classify within each serotype via GLUE's MCLA algorithm
-  #run script glue/dengueGenotypeCuratedSeqs.js
-
-  # ...or else load tabular data (i.e. previously determined genotypes)
-  module dengueSideDataImporterCurated
-    populate -f tabular/denv-ncbi-curated-genotypes.tsv
-    exit
+  #run script glue/dengueGenotypeNuccoreSeqs.js
 
   # Add curated sequences to alignment tree
-  run file glue/dengueAlignmentTreeCurated.glue
+  run file glue/dengueAlignmentTreeNuccore.glue
 
   # Compute alignments for curated sequecnes
-  run file glue/dengueComputeMsasCurated.glue
+  run file glue/dengueComputeMsasNuccore.glue
 
   # Validate
   validate
 
   exit
-
-

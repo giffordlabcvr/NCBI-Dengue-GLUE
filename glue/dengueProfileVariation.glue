@@ -1,0 +1,15 @@
+
+project dengue
+
+  # Run script to calculate aa replacements
+  run script glue/dengueGenerateReplacements.js
+
+  # Count the number of sequences in which variants occur
+  run script glue/dengueSetVariantNumSeqs.js
+  
+  # Validate
+  validate
+
+  exit
+
+

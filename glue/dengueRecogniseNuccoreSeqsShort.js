@@ -1,6 +1,6 @@
 var sequenceMap = {};
 
-var whereClause = "source.name = 'ncbi-nuccore-short'";
+var whereClause = "source.name = 'ncbi-nuccore-short' and serotype = null";
 
 //Do serotype recognition for all ncbi nuccore sequences
 var recognitionResults;
