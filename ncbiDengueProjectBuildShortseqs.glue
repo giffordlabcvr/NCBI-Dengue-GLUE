@@ -6,7 +6,7 @@ project dengue
   # Link sequence table entries to isolate table
   run script glue/dengueLoadIsolateDataCuratedShort.js 
 
-  # Populate refseq + outgroup metadata from GenBank XML
+  # Populate metadata from GenBank XML
   module dengueGenbankXmlPopulator populate -w "source.name = 'ncbi-curated-short'"
   
   # Run script to determine serotypes using BLAST-based recogniser
@@ -21,10 +21,10 @@ project dengue
   #  exit
 
   # Add curated sequences to alignment tree
-  run file glue/dengueAlignmentTreeCurated.glue
+  #run file glue/dengueAlignmentTreeCurated.glue
 
   # Compute alignments for curated sequecnes
-  run file glue/dengueComputeMsasCurated.glue
+  #run file glue/dengueComputeMsasCurated.glue
 
   # Validate
   validate
