@@ -15,7 +15,7 @@ project dengue
     exit
   
   # Run script to determine serotypes using BLAST-based recogniser
-  #run script glue/dengueRecogniseNuccoreSeqs.js
+  run script glue/dengueRecogniseNuccoreSeqs.js
 
   # Run script to classify within each serotype via GLUE's MCLA algorithm
   #run script glue/dengueGenotypeNuccoreSeqs.js
@@ -23,8 +23,8 @@ project dengue
   # Add curated sequences to alignment tree
   run file glue/dengueAlignmentTreeNuccore.glue
 
-  # Compute alignments for curated sequecnes
-  run file glue/dengueComputeMsasNuccore.glue
+  # Compute alignments for curated sequences
+  #run file glue/dengueComputeMsasNuccore.glue
 
   # Validate
   validate
