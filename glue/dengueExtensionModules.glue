@@ -1,7 +1,7 @@
 # Extension modules
 
 # Clean up any previously declared extension modules
-delete module dengueSideDataImporterCurated
+delete module dengueSideDataImporterNuccore
 
 # Create extension modules
-create module -f modules/dengueSideDataImporterCurated.xml
+create module -f modules/dengueSideDataImporterNuccore.xml

@@ -1,23 +1,22 @@
 project dengue
 
-  # Import GenBank curated sequences (rank-and-file sequences)
+  # Import GenBank nuccore sequences (rank-and-file sequences)
   run file glue/dengueImportSources.glue
 
   # Link sequence table entries to isolate table
-  run script glue/dengueLoadIsolateDataCurated.js 
+  run script glue/dengueLoadIsolateDataNuccore.js 
 
   # Populate refseq + outgroup metadata from GenBank XML
   create module -f modules/dengueGenbankXmlPopulator.xml
-  module dengueGenbankXmlPopulator populate -w "source.name = 'ncbi-curated'"
+  module dengueGenbankXmlPopulator populate -w "source.name = 'ncbi-nuccore'"
 
   # Load tabular data
-  #module dengueSideDataImporterCurated
-  #  populate -f tabular/denv-ncbi-curated-genotypes.tsv
-  #  exit
+  create module -f modules/dengueSideDataImporterNuccore.xml
+  module dengueSideDataImporterNuccore
+    populate -f tabular/denv-ncbi-nuccore-genotypes.tsv
+    exit
 
   # Validate
   validate
 
   exit
-
-
