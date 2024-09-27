@@ -1,0 +1,40 @@
+  ### DENV3 constrained alignment tree: minor lineage-level alignments
+
+  alignment AL_DENV_3I_A
+ 
+	demote member AL_DENV_3I_A1 --whereClause "sequence.minor_lineage = '3I_A.1' and sequence.source.name like 'ncbi-nuccore%'"	
+	demote member AL_DENV_3I_A2 --whereClause "sequence.minor_lineage = '3I_A.2' and sequence.source.name like 'ncbi-nuccore%'"	
+  
+	exit
+
+  alignment AL_DENV_3II_A
+ 
+ 	demote member AL_DENV_3II_A1 --whereClause "sequence.minor_lineage = '3II_A.1' and sequence.source.name like 'ncbi-nuccore%'"	
+	demote member AL_DENV_3II_A2 --whereClause "sequence.minor_lineage = '3II_A.2' and sequence.source.name like 'ncbi-nuccore%'"	
+ 	demote member AL_DENV_3II_A3 --whereClause "sequence.minor_lineage = '3II_A.3' and sequence.source.name like 'ncbi-nuccore%'"	
+  
+	exit
+
+  alignment AL_DENV_3III_A
+  
+ 	demote member AL_DENV_3III_A1 --whereClause "sequence.minor_lineage = '3III_A.1' and sequence.source.name like 'ncbi-nuccore%'"	
+	demote member AL_DENV_3III_A2 --whereClause "sequence.minor_lineage = '3III_A.2' and sequence.source.name like 'ncbi-nuccore%'"	
+
+	exit
+ 
+
+  alignment AL_DENV_3III_B
+ 
+	demote member AL_DENV_3III_B1 --whereClause "sequence.minor_lineage = '3III_B.1' and sequence.source.name like 'ncbi-nuccore%'"	
+	demote member AL_DENV_3III_B2 --whereClause "sequence.minor_lineage = '3III_B.2' and sequence.source.name like 'ncbi-nuccore%'"	
+	demote member AL_DENV_3III_B3 --whereClause "sequence.minor_lineage = '3III_B.3' and sequence.source.name like 'ncbi-nuccore%'"	
+
+	exit
+
+
+  alignment AL_DENV_3III_C
+  
+	demote member AL_DENV_3III_C1 --whereClause "sequence.minor_lineage = '3III_C.1' and sequence.source.name like 'ncbi-nuccore%'"	
+	demote member AL_DENV_3III_C2 --whereClause "sequence.minor_lineage = '3III_C.2' and sequence.source.name like 'ncbi-nuccore%'"	
+
+	exit

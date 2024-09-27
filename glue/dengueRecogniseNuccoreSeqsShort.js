@@ -1,13 +1,17 @@
 var sequenceMap = {};
 
+<<<<<<< HEAD
 var whereClause = "source.name = 'ncbi-nuccore-short'";
+=======
+var whereClause = "source.name = 'ncbi-nuccore-short' and serotype = null";
+>>>>>>> main
 
 //Do serotype recognition for all ncbi nuccore sequences
 var recognitionResults;
 var genotypeResults;
 
 // run BLAST recogniser to determine serotype
-glue.inMode("/module/dengueBlastSerotypeRecogniser", function() {
+glue.inMode("/module/dengueSerotypeRecogniser", function() {
 
 	recognitionResults = glue.tableToObjects(glue.command(["recognise", "sequence", "-w", whereClause]));
 		
