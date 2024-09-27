@@ -1,6 +1,6 @@
 project dengue
 
-  # Import GenBank curated sequences (rank-and-file sequences)
+  # Import GenBank nuccore sequences (rank-and-file sequences)
   run file glue/dengueImportSources.glue
 
   # Link sequence table entries to isolate table
@@ -20,10 +20,10 @@ project dengue
   # Run script to classify within each serotype via GLUE's MCLA algorithm
   #run script glue/dengueGenotypeNuccoreSeqs.js
 
-  # Add curated sequences to alignment tree
+  # Add nuccore sequences to alignment tree
   run file glue/dengueAlignmentTreeNuccore.glue
 
-  # Compute alignments for curated sequences
+  # Compute alignments for nuccore sequences
   #run file glue/dengueComputeMsasNuccore.glue
 
   # Validate

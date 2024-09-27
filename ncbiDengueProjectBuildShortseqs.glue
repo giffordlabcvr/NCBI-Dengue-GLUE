@@ -1,6 +1,6 @@
 project dengue
 
-  # Import GenBank curated sequences (rank-and-file sequences)
+  # Import GenBank nuccore sequences (rank-and-file sequences)
   run file glue/dengueImportSourcesShort.glue
 
   # Link sequence table entries to isolate table
@@ -16,14 +16,14 @@ project dengue
   run script glue/dengueGenotypeNuccoreSeqsShort.js
 
   # ...or else load tabular data (i.e. if previously determined genotypes are available)
-  #module dengueSideDataImporterNuccore
-  #  populate -f tabular/denv-ncbi-curated-genotypes-short.tsv
-  #  exit
+  delete module dengueSideDataImporterNuccore
+  create module -f modules/dengueSideDataImporterNuccore.xml
+  module dengueSideDataImporterNuccore populate -f tabular/denv-ncbi-nuccore-genotypes-short.tsv
 
-  # Add curated sequences to alignment tree
-  #run file glue/dengueAlignmentTreeNuccore.glue
+  # Add nuccore sequences to alignment tree
+  run file glue/dengueAlignmentTreeNuccore.glue
 
-  # Compute alignments for curated sequences
+  # Compute alignments for nuccore sequences
   #run file glue/dengueComputeMsasNuccore.glue
 
   # Validate
