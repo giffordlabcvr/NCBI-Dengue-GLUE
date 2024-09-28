@@ -1,0 +1,1 @@
+project dengue list sequence sequenceID source.name serotype genotype major_lineage minor_lineage minor_sublineage -w "source.name = 'ncbi-nuccore'"
