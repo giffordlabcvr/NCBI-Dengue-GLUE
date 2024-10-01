@@ -7,18 +7,18 @@ project dengue
   run script glue/dengueLoadIsolateDataNuccore.js 
 
   # Populate refseq + outgroup metadata from GenBank XML
-  module dengueGenbankXmlPopulator populate -w "source.name = 'ncbi-nuccore'"
+  module denvGenbankXmlPopulator populate -w "source.name = 'ncbi-nuccore'"
 
   # Load classification data from tabular (i.e. from previous genotyping)
-  module dengueSideDataImporterGenotypes
-    populate -f tabular/denv-ncbi-nuccore-genotypes.tsv
-    exit
+  #module dengueSideDataImporterGenotypes
+  #  populate -f tabular/denv-ncbi-nuccore-genotypes.tsv
+  #  exit
   
   # Run script to determine serotypes using BLAST-based recogniser
   run script glue/dengueRecogniseNuccoreSeqs.js
 
   # Run script to classify within each serotype via GLUE's MCLA algorithm
-  #run script glue/dengueGenotypeNuccoreSeqs.js
+  run script glue/dengueGenotypeNuccoreSeqs.js
 
   # Add nuccore sequences to alignment tree
   run file glue/dengueAlignmentTreeNuccore.glue
