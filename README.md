@@ -6,22 +6,7 @@ An extension to **[Dengue-GLUE](https://github.com/giffordlabcvr/Dengue-GLUE)** 
 
 ## Installation
 
-If you have not done so already, install the GLUE software framework by following the [installation instructions](http://glue-tools.cvr.gla.ac.uk/#/installation) on the GLUE web site: 
-
-Then build the Dengue-GLUE base project: download the **[Dengue-GLUE](https://github.com/giffordlabcvr/Dengue-GLUE)** repository and build it according to the instructions.
-
-Once you have done this, you may build the NCBI-Dengue-GLUE project via the GLUE command prompt as follows:
-
-```
-GLUE Version 1.1.107
-Copyright (C) 2015-2020 The University of Glasgow
-This program comes with ABSOLUTELY NO WARRANTY. This is free software, and you
-are welcome to redistribute it under certain conditions. For details see
-GNU Affero General Public License v3: http://www.gnu.org/licenses/
-
-Mode path: /
-GLUE> run file ncbiDengueProjectBuild.glue
-```
+Please see the Dengue-GLUE **[User Guide](https://github.com/giffordlabcvr/Dengue-GLUE/wiki)**
 
 ## Usage
 
