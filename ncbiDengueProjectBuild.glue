@@ -21,7 +21,7 @@ project dengue
   run script glue/dengueGenotypeNuccoreSeqs.js
 
   # Add nuccore sequences to alignment tree
-  run file glue/dengueAlignmentTreeNuccore.glue
+  #run file glue/dengueAlignmentTreeNuccore.glue
 
   # Compute alignments for nuccore sequences
   #run file glue/dengueComputeMsasNuccore.glue
