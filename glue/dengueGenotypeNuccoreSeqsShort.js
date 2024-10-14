@@ -1,9 +1,9 @@
 
 //Do genotype and lineage assignment for all ncbi nuccore sequences
 var ncbinuccore;
-var whereClause = "source.name = 'ncbi-nuccore-short' and genotype = null";
+var whereClause = "source.name = 'ncbi-nuccore-short' and genotype = '-'";
 ncbinuccore = glue.tableToObjects(glue.command(["list", "sequence", "sequenceID", "serotype", "-w", whereClause]));
-//glue.log("INFO", "RESULT WAS ", ncbinuccore);
+glue.log("INFO", "RESULT WAS ", ncbinuccore);
 
 var processed = 0;
 

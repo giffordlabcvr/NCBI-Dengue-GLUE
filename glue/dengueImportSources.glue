@@ -1,4 +1,4 @@
 
-  # Import GenBank nuccore sequences (rank-and-file sequences)
+  # Import GenBank nuccore sequences
   delete source ncbi-nuccore
-  import source /Users/rob/Sources/dengue/ncbi-nuccore
+  import source /Users/robertgifford/Sources/dengue/ncbi-nuccore

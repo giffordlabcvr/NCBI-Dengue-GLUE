@@ -7,7 +7,7 @@ var recognitionResults;
 var genotypeResults;
 
 // run BLAST recogniser to determine serotype
-glue.inMode("/module/dengueSerotypeRecogniser", function() {
+glue.inMode("/module/denvSerotypeRecogniser", function() {
 
 	recognitionResults = glue.tableToObjects(glue.command(["recognise", "sequence", "-w", whereClause]));
 		
