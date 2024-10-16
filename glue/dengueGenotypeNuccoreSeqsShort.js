@@ -110,6 +110,16 @@ _.each(ncbinuccore, function(ncbinuccore) {
 				glue.command(["set", "field", "minor_sublineage", minorSublineage]);
 			});			
 		}
+		if (minorSubSublineageResult) {
+		
+		    var minorSubSublineage = minorSubSublineageResult.replace("AL_DENV_", "");			
+			//glue.log("INFO", "Minor subsublineage RESULT WAS ", minorSubSublineage);			
+			glue.inMode("sequence/"+sourceName+"/"+sequenceID, function() {
+				glue.command(["set", "field", "minor_subsublineage", minorSubSublineage]);
+			});			
+		}
+
+
 	}
 
 	processed++;

@@ -76,6 +76,7 @@ _.each(ncbinuccore, function(ncbinuccore) {
 		var majorLineageResult = genotypeRow[3]
 		var minorLineageResult = genotypeRow[4]
 		var minorSublineageResult = genotypeRow[5]
+		var minorSubSublineageResult = genotypeRow[6]
 	
 		if (genotypeResult) {
 	
@@ -110,6 +111,17 @@ _.each(ncbinuccore, function(ncbinuccore) {
 				glue.command(["set", "field", "minor_sublineage", minorSublineage]);
 			});			
 		}
+		if (minorSubSublineageResult) {
+		
+		    var minorSubSublineage = minorSubSublineageResult.replace("AL_DENV_", "");			
+			//glue.log("INFO", "Minor subsublineage RESULT WAS ", minorSubSublineage);			
+			glue.inMode("sequence/"+sourceName+"/"+sequenceID, function() {
+				glue.command(["set", "field", "minor_subsublineage", minorSubSublineage]);
+			});			
+		}
+
+
+
 	}
 
 	processed++;
