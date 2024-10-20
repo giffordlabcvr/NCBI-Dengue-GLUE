@@ -10,9 +10,10 @@ project dengue
   module denvGenbankXmlPopulator populate -w "source.name = 'ncbi-nuccore'"
 
   # Load classification data from tabular (i.e. from previous genotyping)
-  #module dengueSideDataImporterGenotypes
-  #  populate -f tabular/denv-ncbi-nuccore-genotypes.tsv
-  #  exit
+  create module -f modules/dengueSideDataImporterGenotypes.xml
+  module dengueSideDataImporterGenotypes
+    populate -f tabular/denv-ncbi-nuccore-genotypes.tsv
+    exit
   
   # Run script to determine serotypes using BLAST-based recogniser
   run script glue/dengueRecogniseNuccoreSeqs.js
